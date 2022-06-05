@@ -28,15 +28,11 @@ while True:
                 roku.select()
             elif event.key == pygame.K_HOME or event.key == pygame.K_BACKSPACE:
                 roku.home()
-        if event.type == JOYAXISMOTION:
-            if event.axis == 5:
-                if event.value >= .8:
-                    roku.vol
         if event.type == JOYBUTTONDOWN:
             print(event)
             if event.button == 0:
                 roku.select()
-            if event.button == 3:
+            if event.button == 10:
                 roku.home()
             if event.button == 6 or event.button == 7:
                 roku.info()
