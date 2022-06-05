@@ -1,5 +1,5 @@
 # xoku
-Control your Roku TV with a controller!
+Control your Roku TV with a controller (or keyboard)!
 
 # Warning
 Very messy code written by a beginner
