@@ -1,7 +1,8 @@
 import pygame
 from pygame.locals import *
 from roku import Roku
-roku = Roku('192.168.68.56')
+tvIP = input("Please provide your TVs IP address (settings > network): ")
+roku = Roku(tvIP)
 
 pygame.init()
 pygame.display.set_caption("Roku Controller")
