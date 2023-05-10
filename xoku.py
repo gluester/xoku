@@ -8,9 +8,11 @@ pygame.init()
 pygame.display.set_caption("Roku Controller")
 screen = pygame.display.set_mode((500, 500), 0, 32)
 clock = pygame.time.Clock
-joysticks = [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_count())]
-joystick = pygame.joystick.Joystick(0)
-joystick.init()
+try:
+    # sets all the controller stuff
+    joysticks = [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_count())]; joystick = pygame.joystick.Joystick(0); joystick.init()
+except:
+    print("No controller")
 while True:
     screen.fill((0, 0, 0))
     for event in pygame.event.get():
