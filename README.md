@@ -1,3 +1,5 @@
+# this is terrible and clunky dont use it
+
 # xoku
 Control your Roku TV with a controller (or keyboard)!
 
